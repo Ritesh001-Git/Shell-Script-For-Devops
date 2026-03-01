@@ -27,5 +27,14 @@ else
 echo "Access not granted"
 fi
 
+if [[ -d "$dir" ]]
+then
+echo "Dir $dir Exist"
+else 
+echo "Dir $dir not exist"
+echo "Creating Dictory .. "
+mkdir -p "$dir"
+echo "Dir created"
+fi
 
-
+echo "===== Script Finished ====="
